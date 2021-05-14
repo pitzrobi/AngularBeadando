@@ -1,0 +1,12 @@
+
+
+
+
+<br>
+<label>Felhasználónév: </label>
+<input class="form-control" style="width: 15%" type="text" #user id="user" name="user" placeholder="felhasználónév"/>
+<br>
+<label>Jelszó: </label>
+<input class="form-control" style="width: 15%" id="pass" name="pass" #pass type="password" placeholder="jelszó"/>
+<br>
+<input class="btn btn-info" id="login" type="button"  (click)="Login(user.value, pass.value)" value="Bejelentkezés" />
