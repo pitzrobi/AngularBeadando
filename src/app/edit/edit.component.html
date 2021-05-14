@@ -1,0 +1,24 @@
+<p>Szerkesztés</p>
+
+<form >
+
+  <div class="form-group">
+    <label for="nameinput">Name</label>
+    <input class="form-control" type="text" name="nameinput" id="nameinput" placeholder="Enter Beer" [(ngModel)]="adat.name" >
+  </div>
+
+  <div class="form-group">
+    <label for="taglineinput">Tagline</label>
+    <input class="form-control" type="text" name="taglineinput" id="taglineinput" placeholder="Type tagline" [(ngModel)]="adat.tagline" >
+  </div>
+  <div class="form-group">
+    <label for="abvinput">ABV</label>
+    <input class="form-control" type="number" name="abvinput" id="abvinput" placeholder="Enter ABV"[(ngModel)]="adat.abv"  >
+  </div>
+  <div class="form-group">
+    <label for="ibuinput">IBU</label>
+    <input class="form-control" type="number" name="ibuinput" id="ibuinput" placeholder="Enter IBU" [(ngModel)]="adat.ibu" >
+  </div>
+
+
+  <button class="btn btn-info" type="submit" (click)="save()" routerLink="/list">Submit</button>

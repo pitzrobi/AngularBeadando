@@ -1,0 +1,25 @@
+
+
+
+<table class="table table-bordered">
+    <thead *ngIf="this.service.adatom" class="thead thead-light">
+        <th>Name</th>
+        <th>Tagline</th>
+        <th>ABV</th>
+        <th>IBU</th>
+        <th></th>
+        <th></th>
+    </thead>
+    <tbody>
+        <tr *ngFor = "let adat of this.service.adatom">
+            <td>{{adat.name}}</td>
+            <td>{{adat.tagline}}</td>
+            <td>{{adat.abv}} %</td>
+            <td>{{adat.ibu}}</td>
+            <td>
+              <button class="btn btn-secondary" routerLink="/edit" (click)="service.getadat(adat) ">Szerkesztés</button></td>
+            <td>
+            <button class="btn btn-info" (click)="delete(adat)">Törlés</button></td>
+        </tr>
+    </tbody>
+</table>
